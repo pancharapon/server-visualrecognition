@@ -8,6 +8,8 @@ const Register = require('./Controllers/Register');
 const Profile = require('./Controllers/Profile');
 const Image = require('./Controllers/Image');
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+
 const db = knex({
   client: 'pg',
   connection: {
